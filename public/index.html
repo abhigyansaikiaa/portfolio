@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abhigyan Saikia - Creative Professional specializing in Motion Graphics, Video Editing, and Content Writing">
+    <title>Abhigyan Saikia | Crafting Stories Through Motion, Words & Visuals</title>
+    
+    <!-- Google Fonts: Outfit & Inter for high-end typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lenis for Smooth Scroll CSS (optional but good practice) -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Abhigyan.</div>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#thoughts" class="nav-link">Thoughts</a>
+            <a href="#contact" class="nav-link contact-btn">Let's Talk</a>
+        </div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Hero Section -->
+            <section id="hero" class="hero section">
+                <!-- Video background element -->
+                <div class="hero-bg">
+                    <video autoplay loop muted playsinline class="hero-video">
+                        <source src="https://drive.google.com/uc?export=download&id=1HOrktEdIR-eu_D6kD-mFhwYAMa9M30iA" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                
+                <div class="container hero-content">
+                    <h1 class="hero-title">
+                        <span class="line"><span class="reveal-text">I don't just</span></span>
+                        <span class="line"><span class="reveal-text">edit videos.</span></span>
+                        <span class="line"><span class="reveal-text highlight type-gradient">I shape how stories</span></span>
+                        <span class="line"><span class="reveal-text">are felt.</span></span>
+                    </h1>
+                    
+                    <p class="hero-subtitle reveal-sub">Motion Graphics / Video Editing / Content Writing</p>
+                    
+                    <div class="hero-cta reveal-sub fade-in-up">
+                        <a href="#work" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Email Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about section">
+                <div class="container about-container">
+                    <div class="about-text">
+                        <h2 class="section-title reveal-text-about">
+                            <span class="line"><span class="reveal-inline">More Than Editing.</span></span>
+                            <span class="line"><span class="reveal-inline type-gradient">Storytelling.</span></span>
+                        </h2>
+                        <div class="about-bio">
+                            <p class="fade-in-about">I’m Abhigyan, a storyteller at heart. I don't just put clips together or drop text on a page. I look for the rhythm in raw footage, the emotion behind the copy, and that visual pulse that actually makes an audience stop scrolling.</p>
+                            <p class="fade-in-about">Whether I'm building motion graphics, cutting a cinematic edit, or writing brand copy, my philosophy is dead simple: <strong>if it doesn’t make them feel something, it isn't finished.</strong></p>
+                        </div>
+                        <div class="skills-list fade-in-about">
+                            <span class="skill-pill">Motion Graphics</span>
+                            <span class="skill-pill">Video Editing</span>
+                            <span class="skill-pill">Content Writing</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Showcase Section -->
+            <section id="videos" class="videos section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Video <span class="type-gradient">Showcase.</span></h2>
+                        <p class="section-subtitle fade-in-up" style="margin-bottom: 30px;">Full cinematic projects cut with intentionality. Hover to preview, click to enter fullscreen experience.</p>
+                    </div>
+
+                    <div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
+                        <div class="video-card hover-target lightbox-trigger fade-in-up" data-media="https://drive.google.com/uc?export=download&id=1HOrktEdIR-eu_D6kD-mFhwYAMa9M30iA" data-type="video" style="position: relative; border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; background: #000; cursor: none;">
+                            <video muted loop playsinline class="video-preview" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7; transition: opacity 0.3s ease;" onmouseover="this.play(); this.style.opacity=1;" onmouseout="this.pause(); this.style.opacity=0.7;">
+                                <source src="https://drive.google.com/uc?export=download&id=1HOrktEdIR-eu_D6kD-mFhwYAMa9M30iA" type="video/mp4">
+                            </video>
+                            <div class="video-overlay-ui" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); display: flex; align-items: flex-end; justify-content: space-between; pointer-events: none;">
+                                <h3 class="video-card-title" style="font-size: 1.5rem; margin: 0;">Commercial Deep-Cut</h3>
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="white"></polygon></svg>
+                            </div>
+                        </div>
+
+                        <div class="video-card hover-target lightbox-trigger fade-in-up" data-media="https://drive.google.com/uc?export=download&id=1kKk4w4sVYskH3kD5CFiloU8QG0ouZwQl" data-type="video" style="position: relative; border-radius: 12px; overflow: hidden; aspect-ratio: 16/9; background: #000; cursor: none;">
+                            <video muted loop playsinline class="video-preview" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7; transition: opacity 0.3s ease;" onmouseover="this.play(); this.style.opacity=1;" onmouseout="this.pause(); this.style.opacity=0.7;">
+                                <source src="https://drive.google.com/uc?export=download&id=1kKk4w4sVYskH3kD5CFiloU8QG0ouZwQl" type="video/mp4">
+                            </video>
+                            <div class="video-overlay-ui" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); display: flex; align-items: flex-end; justify-content: space-between; pointer-events: none;">
+                                <h3 class="video-card-title" style="font-size: 1.5rem; margin: 0;">Motion Reel Experience</h3>
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="white"></polygon></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Section -->
+            <section id="work" class="work section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title work-title">Selected <span class="type-gradient">Works.</span></h2>
+                        <div class="work-filters">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="motion">Motion</button>
+                            <button class="filter-btn" data-filter="video">Video</button>
+                            <button class="filter-btn" data-filter="content">Content</button>
+                        </div>
+                    </div>
+
+                    <div class="work-grid">
+                        <div class="project-card" data-category="motion">
+                            <div class="project-image-wrapper hover-target lightbox-trigger" data-media="assets/images/1773933146448.png" data-type="image">
+                                <div class="project-image" style="background-image: url('assets/images/1773933146448.png');"></div>
+                                <div class="project-overlay">
+                                    <span class="view-btn">View Full</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-cat">Motion Graphics</span>
+                                <h3 class="project-title">Cyberpunk Title Sequence</h3>
+                                <p class="project-desc">A high-energy, neon-drenched kinetic typography sequence for a short film.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="video">
+                            <div class="project-image-wrapper hover-target lightbox-trigger" data-media="assets/images/1773933470187.png" data-type="image">
+                                <div class="project-image" style="background-image: url('assets/images/1773933470187.png');"></div>
+                                <div class="project-overlay">
+                                    <span class="view-btn">View Full</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-cat">Video Editing</span>
+                                <h3 class="project-title">Urban Explorer Brand Film</h3>
+                                <p class="project-desc">Cinematic pacing and sound design for an outdoor apparel campaign.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="motion">
+                            <div class="project-image-wrapper hover-target lightbox-trigger" data-media="assets/images/1773934364743.png" data-type="image">
+                                <div class="project-image" style="background-image: url('assets/images/1773934364743.png');"></div>
+                                <div class="project-overlay">
+                                    <span class="view-btn">View Full</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-cat">Motion Graphics</span>
+                                <h3 class="project-title">Synthwave Loop 04</h3>
+                                <p class="project-desc">Abstract 3D looping visuals designed for stage backgrounds.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="content">
+                            <div class="project-image-wrapper hover-target lightbox-trigger" data-media="assets/images/1774118546444.png" data-type="image">
+                                <div class="project-image" style="background-image: url('assets/images/1774118546444.png');"></div>
+                                <div class="project-overlay">
+                                    <span class="view-btn">View Full</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-cat">Content Writing</span>
+                                <h3 class="project-title">The Art of the Cut</h3>
+                                <p class="project-desc">An editorial piece exploring how invisible edits shape emotional narratives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Thoughts Section -->
+            <section id="thoughts" class="thoughts section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">My <span class="type-gradient">Thoughts.</span></h2>
+                        <p class="section-subtitle fade-in-up">Essays and perspectives on storytelling, video marketing, and branding.</p>
+                    </div>
+
+                    <div class="article-grid">
+                        <article class="article-card fade-in-up">
+                            <div class="article-meta">
+                                <span class="article-tag">Storytelling</span>
+                                <span class="article-date">Read Time: 4 Min</span>
+                            </div>
+                            <h3 class="article-title">The Invisible Edit: Why the Best Transitions Go Unnoticed</h3>
+                            <p class="article-preview">We obsess over flashy effects, but the most powerful edits are the ones the viewer never sees. It’s about matching action, predicting the blink, and letting narrative drive the cut instead of software presets.</p>
+                            <a href="article-1.html" class="read-more hover-target">Read Full Article <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </article>
+
+                        <article class="article-card fade-in-up">
+                            <div class="article-meta">
+                                <span class="article-tag">Scriptwriting</span>
+                                <span class="article-date">Read Time: 3 Min</span>
+                            </div>
+                            <h3 class="article-title">Spec Script Excerpt: Neon Horizon Ascendancy</h3>
+                            <p class="article-preview">A dynamic script exploring how copy, camera movement, and sound design intersect to build a high-energy streetwear commercial.</p>
+                            <a href="article-2.html" class="read-more hover-target">Read Script <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </article>
+
+                        <article class="article-card fade-in-up">
+                            <div class="article-meta">
+                                <span class="article-tag">Creative Branding</span>
+                                <span class="article-date">Read Time: 5 Min</span>
+                            </div>
+                            <h3 class="article-title">The 'Aesthetic' Trap: When Creative Forgets the Customer</h3>
+                            <p class="article-preview">It’s easy to make something look cinematic. It’s much harder to make it look cinematic while actually communicating a brand's core value. A deep dive into balancing visual ambition with grounded messaging.</p>
+                            <a href="article-3.html" class="read-more hover-target">Read Full Article <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clients Section -->
+            <section id="clients" class="clients section">
+                <div class="container">
+                    <p class="clients-intro fade-in-up">Trusted by creators and brands who actually give a damn about their story:</p>
+                    <div class="clients-ticker fade-in-up">
+                        <div class="ticker-track">
+                            <span>Vanguard Roasters</span>
+                            <span class="dot">•</span>
+                            <span>Studio Ouroboros</span>
+                            <span class="dot">•</span>
+                            <span>Aether Audio</span>
+                            <span class="dot">•</span>
+                            <span>Lumina Tech</span>
+                            <span class="dot">•</span>
+                            <span>The Daily Grindcast</span>
+                            <span class="dot">•</span>
+                            <span>Neon Peak Apparel</span>
+                            <span class="dot">•</span>
+                            <span>Driftwood Indie</span>
+                            <span class="dot">•</span>
+                            <span>Kinetic Labs</span>
+                            <span class="dot">•</span>
+                            <span>Horizon Collective</span>
+                            <span class="dot">•</span>
+                            <span>Echo State Media</span>
+                            <span class="dot">•</span>
+                            <!-- Duplicate for seamless scroll -->
+                            <span>Vanguard Roasters</span>
+                            <span class="dot">•</span>
+                            <span>Studio Ouroboros</span>
+                            <span class="dot">•</span>
+                            <span>Aether Audio</span>
+                            <span class="dot">•</span>
+                            <span>Lumina Tech</span>
+                            <span class="dot">•</span>
+                            <span>The Daily Grindcast</span>
+                            <span class="dot">•</span>
+                            <span>Neon Peak Apparel</span>
+                            <span class="dot">•</span>
+                            <span>Driftwood Indie</span>
+                            <span class="dot">•</span>
+                            <span>Kinetic Labs</span>
+                            <span class="dot">•</span>
+                            <span>Horizon Collective</span>
+                            <span class="dot">•</span>
+                            <span>Echo State Media</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="testimonials section">
+                <div class="container">
+                    <h2 class="section-title">Word on the <span class="type-gradient">Street.</span></h2>
+                    
+                    <div class="testimonial-grid">
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"He didn't just edit the footage we shot; he found an entirely new angle in post that actually saved the documentary. The pacing is intense. Honestly, way better than what we storyboarded."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Marcus Torian</span>
+                                <span class="testi-role">Director, Studio Ouroboros</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"Abhigyan’s motion graphics on our launch video were crazy smooth. We had a tight deadline and he delivered a V1 that barely needed tweaks. Dude understands rhythm."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Elena Rostova</span>
+                                <span class="testi-role">Founder, Lumina Tech</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"I hired him for some SEO writing and was surprised it didn't sound like a robot wrote it. Real personality, good flow. Our blog traffic actually spiked for the first time in months."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Julian Vance</span>
+                                <span class="testi-role">CMO, Driftwood Indie</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"We gave him a messy 3-hour podcast recording. He gave back a punchy 40-minute episode that made us sound brilliant. Also, the animated intro he tossed in? Chef's kiss."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Sarah &amp; Dean</span>
+                                <span class="testi-role">Hosts, The Daily Grindcast</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"Finding an editor who actually understands streetwear aesthetics and fast-paced culture is rare. The reel he cut for our winter drop is our highest performing ad this year."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Trey Harris</span>
+                                <span class="testi-role">Creative Lead, Neon Peak Apparel</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"He rewrote our entire website copy in one weekend. It went from boring corporate-speak to something that actually sounds like *us*. Totally nailed the tone we were struggling to find."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Camila Silva</span>
+                                <span class="testi-role">Co-Founder, Vanguard Roasters</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"A lot of motion designers just throw templates at a wall. Abhigyan builds custom, cinematic transitions that fit our weird ambient aesthetic perfectly. We use his graphics everywhere now."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Leo DaSilva</span>
+                                <span class="testi-role">Producer, Aether Audio</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"It’s annoying how good he is at spotting the missing beat in an edit. I've sent him rough cuts that felt 'off', and he fixes them with just a few frame shifts and insane sound design."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Jordan Lee</span>
+                                <span class="testi-role">Content Creator</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"We needed five kinetic typo videos in three days for a sudden rebrand. Not only did he hit the deadline, but the typography animations were incredibly crisp. Absolute lifesaver."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">Priya Patel</span>
+                                <span class="testi-role">Art Director, Echo State Media</span>
+                            </div>
+                        </div>
+
+                        <div class="testi-card fade-in-up">
+                            <p class="testi-text">"I don't usually leave reviews, but the script he wrote for our crowdfunding video made my co-founder cry. It wasn't manipulative, just profoundly honest. Strongly recommend."</p>
+                            <div class="testi-author">
+                                <span class="testi-name">David Cheng</span>
+                                <span class="testi-role">CEO, Kinetic Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact section">
+                <div class="container contact-container-centered">
+                    <div class="contact-info fade-in-up" style="text-align: center;">
+                        <h2 class="contact-title" style="font-size: clamp(3rem, 6vw, 5.5rem);">Let's create something that actually stands <span class="type-gradient">out.</span></h2>
+                        <p class="contact-subtitle" style="font-size: 1.5rem; margin-bottom: 60px;">Got a project in mind? Drop me an email or connect on social media.</p>
+                        
+                        <div class="contact-email-wrap" style="margin-bottom: 60px;">
+                            <a href="mailto:workinfofr@gmail.com" class="btn btn-primary btn-massive hover-target">workinfofr@gmail.com</a>
+                        </div>
+                        
+                        <div class="social-links" style="flex-direction: row; justify-content: center; gap: 40px; font-size: 1.3rem;">
+                            <a href="https://www.instagram.com/dhankathaa?igsh=cWRuM3lzdXpsNm4z" target="_blank" class="social-link hover-target" rel="noopener noreferrer">Instagram <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                            <a href="https://www.facebook.com/share/171iyn49uG/" target="_blank" class="social-link hover-target" rel="noopener noreferrer">Facebook <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                            <a href="https://superprofile.bio/dhankathaa" target="_blank" class="social-link hover-target" rel="noopener noreferrer">Linktree <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">Abhigyan Saikia.</div>
+            <div class="footer-credit">Crafting stories through motion. © 2026.</div>
+            <a href="#" class="back-to-top hover-target">Back to top</a>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="media-lightbox" class="lightbox">
+        <button class="lightbox-close hover-target" aria-label="Close Lightbox">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div class="lightbox-content-wrapper fade-in-scale">
+            <img src="" alt="Fullscreen View" class="lightbox-img" style="display: none;">
+            <video src="" class="lightbox-video" controls autoplay playsinline style="display: none;"></video>
+        </div>
+    </div>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
